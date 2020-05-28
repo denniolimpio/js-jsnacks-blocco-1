@@ -5,6 +5,11 @@
 var primoNumero;
 var secondoNumero;
 var messaggio = 'pareggio';
+
+// variabile html
+var  outPrimo = document.getElementById('primo')
+var  outSecondo = document.getElementById('secondo')
+var  vincente = document.getElementById('vincente');
 // chiedo all'utente di inserire due numeri in successione
 
  primoNumero = parseInt(prompt("Inserisci il primo numero"));
@@ -20,25 +25,30 @@ while( ( primoNumero == 0 ) || (isNaN(primoNumero))) {
 while( ( secondoNumero == 0 ) || (isNaN(secondoNumero)) ){
 
   secondoNumero = parseInt(prompt("Inserisci il secondo numero"))
-  console.log(primoNumero);
-  console.log(secondoNumero);
+  // console.log(primoNumero);
+  // console.log(secondoNumero);
 }
 // Soddisfatte le condizioni precedenti
 // confronto quale tra i due numeri inseriti sia maggiore e lo stampo
 
 if ( primoNumero > secondoNumero) {
 
+
   messaggio = " Il primo numero inserito è maggiore";
-  console.log(messaggio)
-}
-else if ( primoNumero < secondoNumero) {
+  // console.log(messaggio)
+
+} else if ( primoNumero < secondoNumero) {
   messaggio = " Il secondo numero inserito è maggiore";
+  // console.log(messaggio)
 
-  console.log(messaggio)
 } else {
-
-  console.log( messaggio);
+  // console.log( messaggio);
 }
 
+
+// stamp nell'html
+outPrimo.innerHTML = " Il primo numero inserito è: " + primoNumero;
+outSecondo.innerHTML = " Il secondo numero inserito è: " + secondoNumero;
+vincente.innerHTML = messaggio;
 
 // stampo nell'html
