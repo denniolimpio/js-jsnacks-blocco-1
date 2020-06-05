@@ -38,5 +38,7 @@ while (arrayUno.length != arrayDue.length ) {
   //aggiungo gli elementi all'array piu corto
 
 }
+
+
 console.log("ArrayUno dopo ",arrayUno);
 console.log( "ArrayDue dopo ",arrayDue);

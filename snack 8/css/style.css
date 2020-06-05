@@ -1,0 +1,30 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 80%;
+  margin: auto;
+}
+
+
+.box {
+  height: 100px;
+  width: auto;
+  font-size: 20px;
+}
+.box.rosso {
+  color: red;
+}
+
+.box.verde {
+color: green;
+}
+
+.box.giallo {
+  color: black;
+
+
+}
